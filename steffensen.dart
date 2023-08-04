@@ -3,13 +3,14 @@ import 'dart:math';
 void main(List<String> args) {
   // Rutina princial: Llamada al método
 
-  final raiz = steffensen(pi / 4, TOL: 0.0000001);
+  final raiz = steffensen(pi / 4);
   print("La raíz es $raiz");
 }
 
 double steffensen(double p0, {double TOL = 0.01, double n0 = 50}) {
   int i = 1;
   double p, p1, p2;
+  double er;
 
   while (i <= n0) {
     p1 = g(p0);
@@ -17,6 +18,8 @@ double steffensen(double p0, {double TOL = 0.01, double n0 = 50}) {
     p = p0 - pow((p1 - p0), 2) / (p2 - 2 * p1 + p0);
     print("p$i = $p");
     if ((p - p0).abs() < TOL) {
+      er = (p-p0).abs()/p.abs() * 100;
+      print("ER = $er %");
       return p;
     }
     i++;
