@@ -1,5 +1,5 @@
 main() {
-  const n = 5;
+  const n = 50;
   final f = factorial(n);
 
   print('$n! = $f');

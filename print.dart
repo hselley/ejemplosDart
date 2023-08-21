@@ -68,4 +68,12 @@ void main() {
   print('I \u2764 Dart\u0021');
 
   print('I love \u{1F3AF}');
+
+  var myPreciousData = 5782;
+  String anInnocentLookingFunction(String name) {
+    myPreciousData = -1;
+    return 'Hello, $name. Heh, heh, heh.';
+  }
+  print(anInnocentLookingFunction("name"));
+  print(myPreciousData);
 }
