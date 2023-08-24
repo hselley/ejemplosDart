@@ -33,4 +33,12 @@ void main(List<String> args) {
       print(e);
     }
   }
+
+  var lista5 = [];
+  // lista5 = lista4; // Copia por referencia
+  lista5 = [...lista4]; // Clonación de lista => copia por valor 
+  print(lista5);
+  lista4.add([3]);
+  print(lista4);
+  print(lista5);
 }
