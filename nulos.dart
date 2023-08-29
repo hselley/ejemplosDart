@@ -21,19 +21,6 @@ void main() {
   int? y = null;
   print(y);
 
-  int? age;
-  double? height;
-  String? message;
-
-  print(age);
-  print(height);
-  print(message);
-  // print(message.length);
-
-  String? name;
-  name = "Bradley";
-  print(name);
-
   /// Función que determina si un entero es positivo, tolerante a nulos
   bool isPositive(int? anInteger) {
     if (anInteger == null) {
@@ -42,6 +29,11 @@ void main() {
     return !anInteger.isNegative;
   }
 
+  print(isPositive(null));
   int v = 1;
   print(isPositive(v));
+
+  String? name;
+  name = 'Bradley';
+  print(name.length);
 }
