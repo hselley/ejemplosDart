@@ -1,7 +1,7 @@
 import 'dart:math';
 
 void main(List<String> args) {
-  var A = <List<double>>[
+  final A = <List<double>>[
     [10, -1, 2, 0],
     [-1, 11, -1, 3],
     [2, -1, 10, -1],
