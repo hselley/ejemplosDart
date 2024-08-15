@@ -21,6 +21,19 @@ void main() {
   final double d = 3;
   print(d);
 
+  // int y double son clases y además subclases de num
+  num n = 50;
+  print("Mi numero es $n");
+  print(n is int);
+  print(n is double);
+  print(n is num);
+
+  n = 50.5;
+  print("Mi numero es $n");
+  print(n is int);
+  print(n is double);
+  print(n is num);
+
   // # Strings
 
   var saludation = "Hello!";
@@ -31,6 +44,9 @@ void main() {
   // Dart soporta emojis: emojipedia.org
   const fire = "🔥";
   print(fire);
+
+  final corazon = "❤️";
+  print(corazon);
 
   const dart = "🎯";
   print(dart);
@@ -50,7 +66,7 @@ void main() {
   print(family.runes.length);
   // Lista de puntos de código Unicode
 
-  int ?x;
+  int? x;
   print(x);
 
   const bigString = '''
@@ -74,6 +90,7 @@ void main() {
     myPreciousData = -1;
     return 'Hello, $name. Heh, heh, heh.';
   }
+
   anInnocentLookingFunction("name");
   print(myPreciousData);
 }
