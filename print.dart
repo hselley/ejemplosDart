@@ -9,6 +9,10 @@ void main() {
   print(numero.round());
   numero = pi.toInt();
   print(numero);
+  print('$numero es par?:');
+  print(numero.isEven);
+  print('$numero es impar?');
+  print(numero.isOdd);
 
   print(DateTime.now().hour);
 
@@ -33,6 +37,8 @@ void main() {
   print(n is int);
   print(n is double);
   print(n is num);
+
+  print(max(n, 4));
 
   // # Strings
 
