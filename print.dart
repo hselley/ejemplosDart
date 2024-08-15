@@ -74,6 +74,6 @@ void main() {
     myPreciousData = -1;
     return 'Hello, $name. Heh, heh, heh.';
   }
-  print(anInnocentLookingFunction("name"));
+  anInnocentLookingFunction("name");
   print(myPreciousData);
 }
