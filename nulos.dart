@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   int? y = null;
   print(y);
@@ -121,4 +123,21 @@ void main() {
 
   var x = first == 5;
   print(x);
+
+  int suma(int n1, int n2) {
+    return n1 + n2;
+  }
+
+  var n1 = 1;
+  var n2 = 5;
+  final s = suma(n1, n2);
+  print(s);
+
+  double f(var x, var y, z) {
+    x = pow(x, 2) + pow(y, 2) + pow(z, 2);
+    return (sqrt(x));
+  }
+
+  final r = f(1, 2, 3);
+  print(r);
 }
